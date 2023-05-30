@@ -1,0 +1,58 @@
+.card-img-top {
+    transition: transform 0.5s;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.1);
+  }
+  
+  #cardContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(5, 5, 5);
+    padding: 20px;
+    display: none;
+  }
+  
+  #closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    /* Modifica los estilos para dispositivos con un ancho máximo de 768px */
+    #cardContainer {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Modifica los estilos para dispositivos con un ancho máximo de 480px */
+    #cardContainer {
+      padding: 5px;
+    }
+  
+    #closeButton {
+      font-size: 18px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  

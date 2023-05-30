@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Galería de Amor</title>
+  
+</head>
+
+<body>
+  <header style="background-image: url('https://i.pinimg.com/564x/e1/e2/d1/e1e2d11f6598448230b2de48849b8014.jpg'); background-size: cover; height: 300px;">
+  
+    
+    <div id="contentContainer">
+      <div class="d-flex flex-column align-items-center justify-content-center h-100">
+        <h1 class="text-white text-center">Galería de Amor</h1>
+        <button id="loveButton" class="btn btn-primary btn-lg mt-3">¡TE QUIRO MUCHO!</button>
+      </div>
+    </div>
+    
+    <div id="cardContainer">
+      <button id="closeButton">&times;</button>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="card">
+              <img src="" alt="Imagen de Amor" id="cardImage" class="card-img-top">
+              <div class="card-body">
+                <p id="cardText" class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+    
+
+  </header>
+
+
+
+  
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" onclick="showPhrase(1)">
+          <img src="https://i.pinimg.com/564x/09/72/3a/09723acf435f87a0b53d881d0b8a161a.jpg" alt="Imagen 1" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" onclick="showPhrase(2)">
+          <img src="https://i.pinimg.com/564x/cc/cc/d0/ccccd0275e295a233c0a0cc4e11a4177.jpg" alt="Imagen 2" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" onclick="showPhrase(3)">
+          <img src="https://i.pinimg.com/564x/be/54/e9/be54e962e498e579c41ee633c92db802.jpg" alt="Imagen 2" class="card-img-top">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" onclick="showPhrase(4)">
+          <img src="https://i.pinimg.com/564x/09/72/3a/09723acf435f87a0b53d881d0b8a161a.jpg" alt="Imagen 1" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" onclick="showPhrase(5)">
+          <img src="https://i.pinimg.com/564x/cc/cc/d0/ccccd0275e295a233c0a0cc4e11a4177.jpg" alt="Imagen 2" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" onclick="showPhrase(6)">
+          <img src="https://i.pinimg.com/564x/be/54/e9/be54e962e498e579c41ee633c92db802.jpg" alt="Imagen 2" class="card-img-top">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" onclick="showPhrase(7)">
+          <img src="https://i.pinimg.com/564x/09/72/3a/09723acf435f87a0b53d881d0b8a161a.jpg" alt="Imagen 1" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" onclick="showPhrase(8)">
+          <img src="https://i.pinimg.com/564x/cc/cc/d0/ccccd0275e295a233c0a0cc4e11a4177.jpg" alt="Imagen 2" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" onclick="showPhrase(9)">
+          <img src="https://i.pinimg.com/564x/be/54/e9/be54e962e498e579c41ee633c92db802.jpg" alt="Imagen 2" class="card-img-top">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="phraseModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="phraseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Frase de Amor</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="phraseText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="main.js" async defer></script>
+
+  
+</body>
+
+</html>
